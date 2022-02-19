@@ -3,36 +3,28 @@ title: "Overview"
 linkTitle: "Overview"
 weight: 1
 description: >
-  Here's where your user finds out if your project is for them.
 ---
-
+<!---
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+To be decided/ deleted
 {{% /pageinfo %}}
+-->
+Data collaboration is a common need in many research fields including finance, health care, cybersecurity, and many others. To protect data privacy in such collaborations, techniques like federated analytics, federated learning, and privacy-preserving machine learning are proposed. However, because there is no universal framework that provides a consistent data collaboration workflow, the implementation and deployment of these techniques in real-world applications are often challenging. Due to the difference in storage and computation abstractions, it is also hard to combine techniques in different works together to provide better solutions.
 
-
-The Overview is where your users find out about your project. Depending on the size of your docset, you can have a separate overview page (like this one) or put your overview contents in the Documentation landing page (like in the Docsy User Guide). 
-
-Try answering these questions for your user in this page:
+In this work, we plan to investigate an efficient programming abstraction to support decentralized data science. We plan to design a framework that handles storage, communication and provides multi-party data collaboration abstractions. Extending gRPC, we propose to simplify the development of multi-party protocols and allow implementations in different programming languages to work together under a consistent interface. With a unified interface that increases potential data contributors, our framework has the potential to enable larger-scale decentralized data collaboration and unlock the true value of data.
 
 ## What is it?
 
-Introduce your project, including what it does or lets you do, why you would use it, and its primary goal (and how it achieves it). This should be similar to your README description, though you can go into a little more detail here if you want.
+TBD
 
-## Why do I want it?
 
-Help your user know if your project will help them. Useful information can include: 
 
-* **What is it good for?**: What types of problems does your project solve? What are the benefits of using it?
+* **What is it good for?**: TBD
 
-* **What is it not good for?**: For example, point out situations that might intuitively seem suited for your project, but aren't for some reason. Also mention known limitations, scaling issues, or anything else that might let your users know if the project is not for them.
+* **What is it not good for?**: TBD
 
-* **What is it *not yet* good for?**: Highlight any useful features that are coming soon.
+* **What is it *not yet* good for?**: TBD
 
-## Where should I go next?
-
-Give your users next steps from the Overview. For example:
-
-* [Getting Started](/docs/getting-started/): Get started with $project
-* [Examples](/docs/examples/): Check out some example code!
+## [Getting Started](/docs/getting-started/)
+## [Examples](/docs/examples/)
 
