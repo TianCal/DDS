@@ -11,11 +11,6 @@ description: >
 
 ## Client
 ```rust
-mod sdk_1;
-use sdk_1::Dds;
-use serde::{Deserialize, Serialize};
-use std::env;
-
 #[derive(Serialize, Deserialize, Debug)]
 pub struct GreetingsParam {
     message: String,
