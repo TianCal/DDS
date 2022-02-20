@@ -1,11 +1,47 @@
+---
+date: 2022-02-19
+title: "Example blog"
+linkTitle: "Example blog"
+description: ""
+author: Riona MacNamara ([@rionam](https://twitter.com/bepsays))
+resources:
+- src: "**.{png,jpg}"
+  title: "Image #:counter"
+  params:
+    byline: "Photo: Riona MacNamara / CC-BY-CA"
+---
 
----
-title: "The second blog post"
-linkTitle: "Second blog post"
-date: 2018-10-06
-description: >
-  A short lead description about this content page. Text here can also be **bold** or _italic_ and can even be split over multiple paragraphs.
----
+**This is a typical blog post that includes images.**
+
+The front matter specifies the date of the blog post, its title, a short description that will be displayed on the blog landing page, and its author.
+
+## Including images
+
+Here's an image (`featured-sunset-get.png`) that includes a byline and a caption.
+
+{{< imgproc sunset Fill "600x300" >}}
+Fetch and scale an image in the upcoming Hugo 0.43.
+{{< /imgproc >}}
+
+The front matter of this post specifies properties to be assigned to all image resources:
+
+```
+resources:
+- src: "**.{png,jpg}"
+  title: "Image #:counter"
+  params:
+    byline: "Photo: Riona MacNamara / CC-BY-CA"
+```
+
+To include the image in a page, specify its details like this:
+
+```
+{{< imgproc sunset Fill "600x300" >}}
+Fetch and scale an image in the upcoming Hugo 0.43.
+{{< /imgproc >}}
+```
+
+The image will be rendered at the size and byline specified in the front matter.
 
 Text can be **bold**, _italic_, or ~~strikethrough~~. [Links](https://github.com) should be blue with no underlines (unless hovered over).
 
@@ -243,3 +279,4 @@ Bacon ipsum dolor sit amet t-bone doner shank drumstick, pork belly porchetta ch
 ```
 This is the final element on the page and there should be no margin below this.
 ```
+
